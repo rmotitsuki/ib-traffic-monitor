@@ -226,12 +226,12 @@ int get_infiniband_metrics(struct infiniband_metrics *input_infiniband_metrics, 
                 input_infiniband_metrics->infiniband[count].port_xmit_constraint_errors = long_int_value;
             }
 
-            ret_snprintf = snprintf(counter_metric_file_path, PATH_MAX, "%s/port_rcv_contraint_errors", sysfs_device_port_counters);
+            ret_snprintf = snprintf(counter_metric_file_path, PATH_MAX, "%s/port_rcv_constraint_errors", sysfs_device_port_counters);
             ret_read_file = read_file_long_int(counter_metric_file_path, &long_int_value);
             if (ret_snprintf < 0 || ret_read_file < 0) {
-                input_infiniband_metrics->infiniband[count].port_rcv_contraint_errors = 0;
+                input_infiniband_metrics->infiniband[count].port_rcv_constraint_errors = 0;
             } else {
-                input_infiniband_metrics->infiniband[count].port_rcv_contraint_errors = long_int_value;
+                input_infiniband_metrics->infiniband[count].port_rcv_constraint_errors = long_int_value;
             }
 
             ret_snprintf = snprintf(counter_metric_file_path, PATH_MAX, "%s/local_link_integrity_errors", sysfs_device_port_counters);
