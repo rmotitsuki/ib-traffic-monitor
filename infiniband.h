@@ -36,7 +36,7 @@ struct interface {
     long int port_rcv_switch_relay_errors;
     long int link_error_recovery;
     long int port_xmit_constraint_errors;
-    long int port_rcv_contraint_errors;
+    long int port_rcv_constraint_errors;
     long int local_link_integrity_errors;
     long int excessive_buffer_overrun_errors;
     long int port_xmit_data;

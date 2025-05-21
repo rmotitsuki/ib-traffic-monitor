@@ -254,7 +254,7 @@ int main(int argc, char *argv[]) {
             mvwprintw(main_window, 2 * ret_get_infiniband_metrics + 14 + i, 28, "%7ld", cur_infiniband_metrics.infiniband[i].port_rcv_errors);
             mvwprintw(main_window, 2 * ret_get_infiniband_metrics + 14 + i, 43, "%8ld", cur_infiniband_metrics.infiniband[i].port_rcv_remote_physical_errors);
             mvwprintw(main_window, 2 * ret_get_infiniband_metrics + 14 + i, 61, "%8ld", cur_infiniband_metrics.infiniband[i].port_rcv_switch_relay_errors);
-            mvwprintw(main_window, 2 * ret_get_infiniband_metrics + 14 + i, 73, "%8ld", cur_infiniband_metrics.infiniband[i].port_rcv_contraint_errors);
+            mvwprintw(main_window, 2 * ret_get_infiniband_metrics + 14 + i, 73, "%8ld", cur_infiniband_metrics.infiniband[i].port_rcv_constraint_errors);
             mvwprintw(main_window, 2 * ret_get_infiniband_metrics + 14 + i, 85, "%8ld", cur_infiniband_metrics.infiniband[i].port_xmit_constraint_errors);
             mvwprintw(main_window, 2 * ret_get_infiniband_metrics + 14 + i, 102, "%8ld", cur_infiniband_metrics.infiniband[i].excessive_buffer_overrun_errors);
             mvwprintw(main_window, 2 * ret_get_infiniband_metrics + 14 + i, 115, "%8ld", cur_infiniband_metrics.infiniband[i].port_xmit_discards);
