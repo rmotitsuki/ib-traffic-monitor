@@ -29,7 +29,7 @@
 #include "ncurses_utils.h"
 #include "utils.h"
 
-#define VERSION "1.3.0"
+#define VERSION "1.3.2"
 
 /* define usage function */
 static void usage(void) {

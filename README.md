@@ -59,7 +59,7 @@ If `ib-traffic-monitor` cannot not detect any valid InfiniBand device, the progr
 
 ```
 $ ./ib-traffic-monitor -h
-InfiniBand Traffic Monitor - Version 1.3.1
+InfiniBand Traffic Monitor - Version 1.3.2
 usage: ib-traffic-monitor [-r|--refresh <second(s)>]
                           [-e|--ethernet]
                           [-h|--help]
@@ -83,6 +83,8 @@ usage: ib-traffic-monitor [-r|--refresh <second(s)>]
 [05/16/2025] 1.3.0 - handle SIGINT signal gracefully
 
 [05/20/2025] 1.3.1 - fix typo on port_rcv_constraint_errors metric
+
+[05/24/2025] 1.3.2 - update version string
 ```
 
 ## Reference
