@@ -44,11 +44,11 @@
 
 ```
 $ make
-gcc -g -Wall -Wextra -Wpedantic -Wconversion -Wdouble-promotion -Wno-unused-parameter -Wno-unused-function -Wno-sign-conversion -fsanitize=undefined -I. -c -o ib-traffic-monitor.o ib-traffic-monitor.c
-gcc -g -Wall -Wextra -Wpedantic -Wconversion -Wdouble-promotion -Wno-unused-parameter -Wno-unused-function -Wno-sign-conversion -fsanitize=undefined -I. -c -o infiniband.o infiniband.c
-gcc -g -Wall -Wextra -Wpedantic -Wconversion -Wdouble-promotion -Wno-unused-parameter -Wno-unused-function -Wno-sign-conversion -fsanitize=undefined -I. -c -o utils.o utils.c
-gcc -g -Wall -Wextra -Wpedantic -Wconversion -Wdouble-promotion -Wno-unused-parameter -Wno-unused-function -Wno-sign-conversion -fsanitize=undefined -I. -c -o ncurses_utils.o ncurses_utils.c
-gcc -g -Wall -Wextra -Wpedantic -Wconversion -Wdouble-promotion -Wno-unused-parameter -Wno-unused-function -Wno-sign-conversion -fsanitize=undefined -I. -o ib-traffic-monitor ib-traffic-monitor.o infiniband.o utils.o ncurses_utils.o -lncurses
+gcc -g -Wall -Wextra -Wpedantic -Wconversion -Wdouble-promotion -Wunused -Wshadow -Wsign-conversion -fsanitize=undefined -I. -c -o ib-traffic-monitor.o ib-traffic-monitor.c
+gcc -g -Wall -Wextra -Wpedantic -Wconversion -Wdouble-promotion -Wunused -Wshadow -Wsign-conversion -fsanitize=undefined -I. -c -o infiniband.o infiniband.c
+gcc -g -Wall -Wextra -Wpedantic -Wconversion -Wdouble-promotion -Wunused -Wshadow -Wsign-conversion -fsanitize=undefined -I. -c -o utils.o utils.c
+gcc -g -Wall -Wextra -Wpedantic -Wconversion -Wdouble-promotion -Wunused -Wshadow -Wsign-conversion -fsanitize=undefined -I. -c -o ncurses_utils.o ncurses_utils.c
+gcc -g -Wall -Wextra -Wpedantic -Wconversion -Wdouble-promotion -Wunused -Wshadow -Wsign-conversion -fsanitize=undefined -I. -o ib-traffic-monitor ib-traffic-monitor.o infiniband.o utils.o ncurses_utils.o -lncurses
 ```
 
 ## Usage
@@ -59,7 +59,7 @@ If `ib-traffic-monitor` cannot not detect any valid InfiniBand device, the progr
 
 ```
 $ ./ib-traffic-monitor -h
-InfiniBand Traffic Monitor - Version 1.3.2
+InfiniBand Traffic Monitor - Version 1.3.3
 usage: ib-traffic-monitor [-r|--refresh <second(s)>]
                           [-e|--ethernet]
                           [-h|--help]
@@ -85,6 +85,8 @@ usage: ib-traffic-monitor [-r|--refresh <second(s)>]
 [05/20/2025] 1.3.1 - fix typo on port_rcv_constraint_errors metric
 
 [05/24/2025] 1.3.2 - update version string
+
+[09/02/2025] 1.3.3 - fix variable shadowing
 ```
 
 ## Reference
