@@ -24,7 +24,7 @@ void construct_window_layout(WINDOW *input_window, int interface_count) {
     char *interface_status_layout = "Interface Name  |   LID   |   Link Layer   |      State      |  Physical State  |     Rate";
 
     char *interface_io_banner = "Interface I/O (per second)";
-    char *interface_io_layout = "Interface Name  |  RX Packet  |   RX MB   |  TX Packet  |   TX MB   |  UC RX Packet  |  UC TX Packet  |  MC RX Packet  |  MC TX Packet";
+    char *interface_io_layout = "Interface Name  |  RX Packet  |   RX Mbit |  TX Packet  |   TX Mbit |  UC RX Packet  |  UC TX Packet  |  MC RX Packet  |  MC TX Packet";
 
     char *interface_error_banner = "Interface Error (cumulative)";
     char *interface_error_layout = "Interface Name  | Symbol |   RX   | RX Remote PHY | RX Switch Relay | RX Const. | TX Const. | Buffer Overrun | TX Discard | VL15 Dropped";
